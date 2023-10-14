@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Calculator</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: lightskyblue;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 20%;
+            left: 35%;
+        }
+
+        label{
+            font-size:large;
+            color: maroon;
+        }
+
+        input, button{
+            border-radius: 5px;
+        }
+
+        button{
+            background-color: greenyellow;
+        }
+
+        img{
+            align-items: self;
+            width: 600px;
+            height: 800px;
+        }
+
+        .eb-img img{
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>EB Calculator</h1>
+    <label for="units"> Enter EB Units</label><br>
+    <input type="number" placeholder="Units" id="units"> <br>
+    <button onclick="calculate_eb()">Calculate</button> <br><br>
+    <span id="res">Your bill costs <span id="result"></span> rupees </span>
+</div>
+
+    <script src="eb-calc.js"></script>
+</body>
+</html>
